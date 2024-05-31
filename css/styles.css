@@ -12,9 +12,8 @@
     background-color: #323331;
     width: 100%;
     height: 5.1rem;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 7.5rem);
     grid-template-rows: repeat(3, 1.7rem);
-    position: sticky;
     font-family: 'jura';
     font-size: 1.5rem;
 }
@@ -383,4 +382,32 @@ h2 {
 .fondo2 {
     color: #FDF1F1;
     background-color: #323331;
+}
+
+/* --------------------------   */
+/* ------ media-queries -----   */
+/* --------------------------   */
+
+@media (max-width: 768px) {
+    .header{
+        display: grid;
+        background-color: #323331;
+        width: 768px;
+        height: 5.1rem;
+        grid-template-columns: repeat(12, 4rem);
+        grid-template-rows: repeat(3, 1.7rem);
+        font-family: 'jura';
+        font-size: 1.5rem;
+    }
+
+    .fondo {
+        grid-column: 1/14;
+        grid-row: 1/4;
+    }
+
+    .fondo img{
+        width: 768px;
+        height: auto;
+    }
+
 }
